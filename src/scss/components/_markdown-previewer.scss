@@ -1,0 +1,37 @@
+@use '../abstracts/index' as *;
+
+#markdown-previewer{
+    @include flex($direction: column);
+    height: 100%;
+
+    .title-bar{
+        padding: 1rem;
+        height: $title-bar;
+        @include flex($align: flex-end, $gap: 1rem);
+        
+        h1{
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 70%;
+        }
+        p{
+            color: $color-light2;
+            line-height: 70%;
+        }
+    }
+    .body-container{
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        height: calc(100vh - $title-bar);
+    }
+
+    @include media-m{
+        .body-container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 40% 1fr;
+            grid-gap: 0.5em;
+        }
+    }
+}

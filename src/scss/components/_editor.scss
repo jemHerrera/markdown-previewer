@@ -1,0 +1,24 @@
+@use '../abstracts/index' as *;
+
+#editor-container{
+    @include flex($direction:column);
+    background-color: $color-dark1;
+
+    .title{
+        padding: 1em;
+        background-color: $color-dark1;
+    }
+
+    #editor{
+        align-self:stretch;
+        flex-grow: 1;
+        resize: none;
+        background: none;
+        overflow: auto;
+        font-family: 'Fira Sans', monospace;
+        padding: 2em;
+        margin-left: 2em;
+        border-left: 1px solid $color-light2;
+    }
+
+}

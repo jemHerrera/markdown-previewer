@@ -1,0 +1,65 @@
+@use '../abstracts/index' as *;
+
+#preview{
+    height: 100%;
+    overflow-y: auto;
+    background-color: $color-dark2;
+    padding: 4em;
+    @include flex($direction:column, $gap: 1.5rem);
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        color: $color-light0;
+        font-weight: 600;
+    }
+    pre{
+        background: $color-light4;
+        width: 100%;
+        display: block;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-family: 'Fira Sans', monospace;
+    }
+    code{
+        background: $color-light4;
+        padding: 1px;
+        font-family: 'Fira Sans', monospace;
+    }
+    blockquote{
+        margin-left: 2em;
+        *{
+            color: $color-light3;
+        }
+    }
+    a{
+        color: $color-pink;
+        &:hover{
+            color: $color-blue;
+        }
+    }
+    li{
+        margin: 0 0 0.5em 2em;
+    }
+    img{
+        max-width: 100%;
+        // width: 100%;
+        // object-fit: contain;
+    }
+    table{
+        &, th, td{
+            border: 1px solid $color-light0;
+            text-align: left;
+        }
+
+        border-collapse: collapse;
+        align-self: flex-start;
+
+        th, td{
+            padding: 0.5em;
+        }
+    }
+}
