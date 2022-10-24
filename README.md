@@ -1,6 +1,4 @@
-Github Pages: [links](https://jemherrera.github.io/markdown-previewer)
-
-# Build a Markdown Previewer
+# [Build a Markdown Previewer](https://jemherrera.github.io/markdown-previewer)
 
 This project is a requirement for completing FreeCodeCamp's **Front End Development** Libraries course.
 
